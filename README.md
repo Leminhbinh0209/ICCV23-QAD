@@ -6,10 +6,8 @@ UNDER REVIEW - ID 5523<br />
 
 
 ## Overview of our framework
-<p align="center">
-    <img src="https://i.ibb.co/5KSrMHL/main-arch.png" width="960" alt="overall pipeline">
-<p>
 
+![IMG](asset/main_arch.png)
 
 ## Installation
 - Ubuntu 18.04.5 LTS
