@@ -1,7 +1,7 @@
 # QAD: Quality-Agnostic Deepfake Detection with Intra-model Collaborative Learning 
 
 UNDER REVIEW - ID 5523<br /> 
-*2023 International Conference on Computer Vision* <br /> 
+*International Conference on Computer Vision 2023* <br /> 
 
 
 
