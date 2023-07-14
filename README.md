@@ -4,6 +4,7 @@
 *International Conference on Computer Vision 2023* <br /> 
 
 
+<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Leminhbinh0209/QAD?style=for-the-badge" height="25"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Leminhbinh0209/QAD?style=for-the-badge" height="25"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Leminhbinh0209/QAD?style=for-the-badge" height="25">
 
 ## Overview of our framework
 
