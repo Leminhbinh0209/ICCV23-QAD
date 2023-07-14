@@ -27,7 +27,7 @@
 python train --config ./configs/hkrawp.yaml
 ```
 
-Pre-trained weights of QAD with ResNet50 and EfficientNet-B1 over 7 datasets are published [here](https://o365skku-my.sharepoint.com/:f:/g/personal/bmle_o365_skku_edu/EjnUUM_MKwVDmWHHwg9kX0gBRhOSAyvv24M8ljruYjh8zg?e=RtTMAN).
+[Pre-trained weights](https://o365skku-my.sharepoint.com/:f:/g/personal/bmle_o365_skku_edu/EjnUUM_MKwVDmWHHwg9kX0gBRhOSAyvv24M8ljruYjh8zg?e=RtTMAN) of QAD with ResNet50 and EfficientNet-B1 over 7 datasets are published.
 
 #
 *Star if you find it useful.*  ⭐
