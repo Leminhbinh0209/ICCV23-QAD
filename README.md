@@ -23,10 +23,15 @@
 * FaceShifter [[Dataset]](https://github.com/ondyari/FaceForensics)  [[Paper]](https://arxiv.org/abs/1912.13457) 
 * CelebDFv2 [[Dataset]](https://cse.buffalo.edu/~siweilyu/celeb-deepfakeforensics.html)  [[Paper]](https://arxiv.org/abs/1909.12962) 
 * FFIW10K [[Dataset]](https://github.com/tfzhou/FFIW)  [[Paper]](https://arxiv.org/abs/2103.04570) 
-```
-python train --config ./configs/hkrawp.yaml
-```
 
+Training with ResNet50 
+```
+python train --config ./configs/hkrawp_resnet.yaml
+```
+Or with EfficientNet-B1
+```
+python train --config ./configs/hkrawp_effnet.yaml
+```
 [Pre-trained weights](https://o365skku-my.sharepoint.com/:f:/g/personal/bmle_o365_skku_edu/EjnUUM_MKwVDmWHHwg9kX0gBRhOSAyvv24M8ljruYjh8zg?e=RtTMAN) of QAD with ResNet50 and EfficientNet-B1 over 7 datasets are published.
 
 #

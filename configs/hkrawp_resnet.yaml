@@ -1,0 +1,50 @@
+model: "hkrawp_resnet50"
+dataset: "neuraltextures"
+running_name: "train_img224_warmup3_raw_c23_c40_one_cycle_batch64_gamma0.002_hkr0.004"
+output_folder: "./outputs/"
+
+data_quality: ["raw", "c23", "c40"]
+test_data_quality: ["raw", "c23", "c40"]
+data_shuffle: False
+is_train: True
+
+SYS:
+    use_cuda: True
+    num_gpus: 1
+    GPUs: "0"
+    num_workers: 8
+    random_seed: 41
+
+TRAIN:
+    num_classes: 2
+    image_size: 224
+
+    batch_size: 64
+    lr: 0.0002
+    weight_decay: 0.0001
+    momentum: 0.9
+    optimizer: "Adam"
+    scheduler: "one_cycle"
+    epochs: 32
+    lb_smoothing: False
+    validate_inside: True
+    warming_up: 3
+    apply_earlystop: True
+    patience: 100
+    watchdb: False
+    lr_decay_rate: 0.1
+    lr_decay_epochs: [10, 16, 24]
+    cutmix: False
+    dynamic_cutout: False
+    dynamic_cutmix: False
+    logit_weight: False
+    alpha_logit: 1
+
+    AWP:
+        awp_gamma: 0.002
+        awp_warmup: 3
+
+    HKR:
+        weights: [0.1, 0.25, 0.5, 0.0, 0.0, 0.0]
+        sigma: 6.0
+        alpha_hkr: 0.003

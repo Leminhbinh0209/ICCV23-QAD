@@ -85,8 +85,13 @@ def main(config):
 
     if "hkrawp" in config.model:
         print(f"{bcolors.HEADER}AWP w/ HSIC {bcolors.ENDC}")
-        model = resnet50(pretrained=True,  num_classes=2).to(device)
-        set_trainable(model, False, ['fc'], [0])  # for  warming up
+        if "resnet" in config.model:
+            model = eval(config.model.split('_')[-1])(pretrained=True,  num_classes=2).to(device)
+            set_trainable(model, False, ['fc'], [0])  
+        if "effnet" in config.model:
+            model = EfficientNet.from_pretrained(
+                'efficientnet-b1' if 'effnetb1' in config.model else 'efficientnet-b0', dropout_rate=0, num_classes=2).to(device)
+            set_trainable(model, False, ['_fc'], [0])
      
         criterion = torch.nn.ModuleList([])
         criterion.append(torch.nn.CrossEntropyLoss().cuda())
@@ -94,40 +99,6 @@ def main(config):
                                 n_modality=len(config.data_quality), 
                                 sigma=config.TRAIN.HKR.sigma))
 
-        normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
-                                         std=[0.229, 0.224, 0.225])
-        
-        param_dict = [{'params': model.parameters(), 'lr': config.TRAIN.lr}]
-
-        proxy = resnet50(pretrained=True,  num_classes=2).to(device)
-        proxy_optim = optim.SGD(proxy.parameters(), lr=config.TRAIN.lr)
-        modules["awp"] =  AWP(model=torch.nn.DataParallel(model, device_ids=device_ids), 
-                                    proxy=proxy, proxy_optim=proxy_optim, 
-                                    gamma=config.TRAIN.AWP.awp_gamma)
-
-
-    elif 'hkr' in config.model:
-        print(f"{bcolors.HEADER}Apply Hilbert Kernel Regularization{bcolors.ENDC}")
-        model = resnet50(pretrained=True,  num_classes=2)
-        set_trainable(model=model, boolean=False, except_layers=['fc'], device_ids=[0])
-   
-        
-        criterion = torch.nn.ModuleList([])
-        criterion.append(torch.nn.CrossEntropyLoss().cuda())
-
-        criterion.append(HKRPair(weights=config.TRAIN.HKR.weights, 
-                                n_modality=len(config.data_quality), 
-                                sigma=config.TRAIN.HKR.sigma))
-        normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
-                                         std=[0.229, 0.224, 0.225])
-        param_dict = [{'params': model.parameters(), 'lr': config.TRAIN.lr}]
-
-    elif "awp" in config.model:
-        print(f"{bcolors.HEADER}Adversarial weight purturbation{bcolors.ENDC}")
-        model = resnet50(pretrained=True,  num_classes=2).to(device)
-        set_trainable(model, False, ['fc'], [0])  # for  warming up
-
-        criterion = torch.nn.CrossEntropyLoss()
         normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                          std=[0.229, 0.224, 0.225])
         
