@@ -1,7 +1,7 @@
 model: "hkrawp_effnetb1"
 dataset: "neuraltextures"
 running_name: "train_img240_warmup3_raw_c23_c40_one_cycle_batch64_gamma0.006_alpha0.002"
-output_folder: "/media/data1/binh/COLD/outputs/"
+output_folder: "./outputs/"
 
 data_quality: ["raw", "c23", "c40"]
 test_data_quality: ["raw", "c23", "c40"]
