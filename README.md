@@ -35,4 +35,12 @@ python train --config ./configs/hkrawp_effnet.yaml
 [Pre-trained weights](https://o365skku-my.sharepoint.com/:f:/g/personal/bmle_o365_skku_edu/EjnUUM_MKwVDmWHHwg9kX0gBRhOSAyvv24M8ljruYjh8zg?e=RtTMAN) of QAD with ResNet50 and EfficientNet-B1 over 7 datasets are published.
 
 #
-*Star if you find it useful.*  ⭐
+*Star (⭐) if you find it useful, and consider to cite our work*  
+```
+@inproceedings{zheng2021exploring,
+  title={Quality-Agnostic Deepfake Detection with Intra-model Collaborative Learning},
+  author={Le, Binh M. and Woo, Simon },
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  year={2023}
+}
+```
