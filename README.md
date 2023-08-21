@@ -37,7 +37,7 @@ python train --config ./configs/hkrawp_effnet.yaml
 #
 *Star (⭐) if you find it useful, and consider to cite our work*  
 ```
-@inproceedings{zheng2021exploring,
+@inproceedings{le2023qad,
   title={Quality-Agnostic Deepfake Detection with Intra-model Collaborative Learning},
   author={Le, Binh M. and Woo, Simon },
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
