@@ -1,0 +1,20 @@
+{
+"train":{
+	"raw": ["train_img1_raw.png", "train_img2_raw.png", "train_img2_raw.png"],
+	"c23": ["train_img1_c23.png", "train_img2_c23.png", "train_img2_c23.png"],
+	"c40": ["train_img1_c40.png", "train_img2_c40.png", "train_img2_c40.png"],
+	"labels": ["<label_train_img1>", "<label_train_img2>", "<label_train_img3>"]
+},
+"val": {
+	"raw": ["val_img1_raw.png", "val_img2_raw.png"],
+	"c23": ["val_img1_c23.png", "val_img2_c23.png"],
+	"c40": ["val_img1_c40.png", "val_img2_c40.png"],
+	"labels": ["<label_val_img1>", "<label_val_img2>"]
+},
+"test": {
+	"raw": ["test_img1_raw.png", "test_img2_raw.png"],
+	"c23": ["test_img1_c23.png", "test_img2_c23.png"],
+	"c40": ["test_img1_c40.png", "test_img2_c40.png"],
+	"labels": ["<label_test_img1>", "<label_test_img2>"]
+}
+}
