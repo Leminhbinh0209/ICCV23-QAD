@@ -24,6 +24,9 @@
 * CelebDFv2 [[Dataset]](https://cse.buffalo.edu/~siweilyu/celeb-deepfakeforensics.html)  [[Paper]](https://arxiv.org/abs/1909.12962) 
 * FFIW10K [[Dataset]](https://github.com/tfzhou/FFIW)  [[Paper]](https://arxiv.org/abs/2103.04570) 
 
+For training the model with `QAD`, a `JSON` file includes directories of training, validation, and test images, organized as in our example `dataset/neuraltextures/data.json`.
+
+## Training
 Training with ResNet50 
 ```
 python train --config ./configs/hkrawp_resnet.yaml
