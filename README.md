@@ -35,7 +35,9 @@ Or with EfficientNet-B1
 ```
 python train --config ./configs/hkrawp_effnet.yaml
 ```
-[Pre-trained weights](https://o365skku-my.sharepoint.com/:f:/g/personal/bmle_o365_skku_edu/EjnUUM_MKwVDmWHHwg9kX0gBRhOSAyvv24M8ljruYjh8zg?e=RtTMAN) of QAD with ResNet50 and EfficientNet-B1 over 7 datasets are published.
+## Pre-trained weights
+
+Due to our limited cloud resources, please create an empty Drive folder and send an email to us; we will then upload into your folder.
 
 #
 *Star (⭐) if you find it useful, and consider to cite our work*  
