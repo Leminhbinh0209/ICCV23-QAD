@@ -36,8 +36,7 @@ Or with EfficientNet-B1
 python train --config ./configs/hkrawp_effnet.yaml
 ```
 ## Pre-trained weights
-
-Due to our limited cloud resources, please create an empty Drive folder and send an email to us; we will then upload into your folder.
+ [Pre-trained weights](https://o365skku-my.sharepoint.com/:f:/g/personal/bmle_o365_skku_edu/Evvcf0QH-IxJuqwMGjMHotsBukNl_5Bb-0J-xrCM_G6evA?e=oTFF1O) are released. If you cannot access, please create an empty Drive folder and send an email to us; we will then upload into your folder.
 
 #
 *Star (⭐) if you find it useful, and consider to cite our work*  
