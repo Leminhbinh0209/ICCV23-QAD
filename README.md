@@ -46,6 +46,11 @@ Due to our limited cloud resources, please create an empty Drive folder and send
   title={Quality-Agnostic Deepfake Detection with Intra-model Collaborative Learning},
   author={Le, Binh M. and Woo, Simon },
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
-  year={2023}
+  year={2023},
+  doi = {10.1109/ICCV51070.2023.02045},
+  url = {https://doi.ieeecomputersociety.org/10.1109/ICCV51070.2023.02045},
+  publisher = {IEEE Computer Society},
+  address = {Los Alamitos, CA, USA},
+  month = {oct}
 }
 ```
