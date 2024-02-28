@@ -43,14 +43,10 @@ Due to our limited cloud resources, please create an empty Drive folder and send
 *Star (⭐) if you find it useful, and consider to cite our work*  
 ```
 @inproceedings{le2023qad,
-  title={Quality-Agnostic Deepfake Detection with Intra-model Collaborative Learning},
-  author={Le, Binh M. and Woo, Simon },
+  title={Quality-agnostic deepfake detection with intra-model collaborative learning},
+  author={Le, Binh M and Woo, Simon S},
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
-  year={2023},
-  doi = {10.1109/ICCV51070.2023.02045},
-  url = {https://doi.ieeecomputersociety.org/10.1109/ICCV51070.2023.02045},
-  publisher = {IEEE Computer Society},
-  address = {Los Alamitos, CA, USA},
-  month = {oct}
+  pages={22378--22389},
+  year={2023}
 }
 ```
