@@ -2,7 +2,7 @@
 
 
 *International Conference on Computer Vision (**ICCV**) 2023*<br />
-[[paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Le_Quality-Agnostic_Deepfake_Detection_with_Intra-model_Collaborative_Learning_ICCV_2023_paper.pdf)]
+[[paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Le_Quality-Agnostic_Deepfake_Detection_with_Intra-model_Collaborative_Learning_ICCV_2023_paper.pdf)][[arxiv](https://arxiv.org/abs/2309.05911)]
 <br /> 
 
 
@@ -38,7 +38,7 @@ Or with EfficientNet-B1
 python train --config ./configs/hkrawp_effnet.yaml
 ```
 ## Pre-trained weights
- [Pre-trained weights](https://o365skku-my.sharepoint.com/:f:/g/personal/bmle_o365_skku_edu/Evvcf0QH-IxJuqwMGjMHotsBukNl_5Bb-0J-xrCM_G6evA?e=oTFF1O) are released. If you cannot access, please create an empty Drive folder and send an email to us; we will then upload into your folder.
+ [Pre-trained weights](https://o365skku-my.sharepoint.com/:f:/g/personal/bmle_o365_skku_edu/Evvcf0QH-IxJuqwMGjMHotsBukNl_5Bb-0J-xrCM_G6evA?e=oTFF1O) are released. 
 
 #
 *Star (⭐) if you find it useful, and consider to cite our work*  
