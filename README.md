@@ -37,8 +37,6 @@ Or with EfficientNet-B1
 ```
 python train --config ./configs/hkrawp_effnet.yaml
 ```
-## Pre-trained weights
- [Pre-trained weights](https://o365skku-my.sharepoint.com/:f:/g/personal/bmle_o365_skku_edu/Evvcf0QH-IxJuqwMGjMHotsBukNl_5Bb-0J-xrCM_G6evA?e=oTFF1O) are released. 
 
 #
 *Star (⭐) if you find it useful, and consider to cite our work*  
